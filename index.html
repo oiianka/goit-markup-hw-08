@@ -15,11 +15,46 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo logo_blue header__logo"
           >Web<span class="logo logo_black">Studio</span></a
         >
+        <button class="header__button" type="button" data-menu-open>
+          <svg class="header__button__icon" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+        </button>
+        <div class="header__menu is-hidden" data-menu>
+          <button type="button" class="menu-close" data-menu-close><svg class=".icon-menu-close" width="40" height="40">
+                            <use href="./images/icons.svg#icon-close-mobile"></use>
+                        </svg></button>
+<ul class="header__menu__list">
+  <li class="header__menu__item"><a class="header__menu__link header__menu__link_current" href="">Студия</a></li>
+  <li class="header__menu__item"><a class="header__menu__link" href="">Портфолио</a></li>
+  <li class="header__menu__item"><a class="header__menu__link" href="">Контакты</a></li>
+</ul>
+<ul class="header__menu__contacts">
+  <li class="menu__contacts__list">
+            <a href="tel:+380961111111" class="menu__contacts__phone"
+              >
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="menu__contacts__list">
+            <a href="mailto:info@devstudio.com" class="menu__contacts__mail"
+              >
+              info@devstudio.com
+            </a>
+          </li>
+                  </ul>
+                  <ul class="header__menu__sotials">
+                    <li class="header__menu__sotials__item"><a class="header__menu__sotials__link" href=""></a>Instagram</li>
+                    <li class="header__menu__sotials__item"><a class="header__menu__sotials__link" href=""></a>Twitter</li>
+                    <li class="header__menu__sotials__item"><a class="header__menu__sotials__link" href=""></a>Facebook</li>
+                    <li class="header__menu__sotials__item"><a class="header__menu__sotials__link" href=""></a>LinkedIn</li>
+                  </ul>
+        </div>
         <nav>
           <ul class="navigation">
             <li class="navigation__list">
@@ -52,16 +87,16 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="hero hero_centering">
+      <section class="hero hero_centering">
         <div class="hero__wrap">
           <h1 class="hero__header">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="section">
         <div class="container">
@@ -615,5 +650,6 @@
       <!--hhb-->
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

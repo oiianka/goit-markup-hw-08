@@ -1,3 +1,9 @@
+@media screen and (max-width: 767px){
+.navigation {
+  display: none;
+}}
+
+@media screen and (min-width: 1200px) {
 .navigation {
   display: flex;
   align-items: center;
@@ -38,4 +44,4 @@
   border-radius: 2px;
   position: absolute;
   bottom: -32px;
-}}
+}}}
