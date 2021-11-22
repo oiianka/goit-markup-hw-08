@@ -1,0 +1,53 @@
+body {
+  background-color: var(
+    --big-header-color
+  ); /*Don't forget change it after lesson 7*/
+  color: var(--primary-text-color);
+  font-family: Roboto, Sans-serif;
+  letter-spacing: 0.03em;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+}
+
+.title
+ {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--small-header-color);
+  margin-bottom: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

@@ -1,0 +1,134 @@
+.footer-bg {
+  background-color: var(
+    --footer-bg-color
+  ); /*Don't forget change it after lesson 7*/
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer {
+  .container {
+  display: flex;
+}}
+
+.footer-adress-container {
+  margin-right: 70px;
+}
+
+.footer-adress {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--big-header-color);
+  font-style: normal;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.footer-contacts {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--footer-text-color);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.footer-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-socials:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  margin-right: 93px;
+}
+
+.footer-call {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--big-header-color);
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
+
+.footer-social-icons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-icons-list {
+  li:not(:last-child) {
+  margin-right: 10px;
+}}
+
+.footer-social-icons-link {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+&:focus {
+  background-color: var(--accent-color);
+  outline: none;
+}
+}
+
+
+.footer-social-icons {
+  fill: var(--big-header-color);
+}
+
+.maling-wrap {
+  display: flex;
+  position: relative;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
+  padding-left: 16px;
+}
+
+.footer-btn {
+  width: 200px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--big-header-color);
+  border-width: 0px;
+  border-style: none;
+  text-align: left;
+  padding-left: 29px;
+}
+.mailing-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
