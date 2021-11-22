@@ -1,4 +1,10 @@
 .example {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+.example {
+  display: block;
   padding-bottom: 94px;
 }
 
@@ -28,4 +34,5 @@
   position: absolute;
   bottom: 0;
   padding-top: 27px;
+}
 }
