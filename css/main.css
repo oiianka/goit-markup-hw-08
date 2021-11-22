@@ -721,7 +721,7 @@ img {
 .team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
   text-align: center;
   color: var(--small-header-color);
   margin-bottom: 10px;
@@ -729,7 +729,7 @@ img {
 
 .team-profession {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
   text-align: center;
 }
 
@@ -777,12 +777,28 @@ img {
 
 .client-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-right: -30px;
 }
 
 .client-item {
-  flex-basis: calc(100% / 6 - 30px);
+  flex-basis: calc(100% / 2 - 30px);
   margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .client-item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-bottom: 0;
+  }
 }
 
 .client-icons-link {
@@ -790,7 +806,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -799,16 +815,29 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-icons-link:hover, .client-icons-link:focus {
+.client-icons-link:hover, .client-icons-link:focus, .client-icons-link:active {
   border-color: var(--accent-color);
   outline: none;
 }
 
 .client-icons-link:hover .client-icons,
 .client-icons-link:hover .client-icons, .client-icons-link:focus .client-icons,
-.client-icons-link:focus .client-icons {
+.client-icons-link:focus .client-icons, .client-icons-link:active .client-icons,
+.client-icons-link:active .client-icons {
   fill: var(--accent-color);
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .client-icons-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-icons-link {
+    width: 170px;
+  }
 }
 
 .client-icons {
