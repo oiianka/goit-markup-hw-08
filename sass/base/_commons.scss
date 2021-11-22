@@ -37,11 +37,19 @@ img {
 .title
  {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   color: var(--small-header-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
 }
 
 .visually-hidden {
