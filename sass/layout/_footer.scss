@@ -1,19 +1,44 @@
 .footer-bg {
   background-color: var(
     --footer-bg-color
-  ); /*Don't forget change it after lesson 7*/
+  ); 
 }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+@media screen and (min-width: 768px) {
 .footer {
   .container {
   display: flex;
-}}
+  flex-wrap: wrap;
+  justify-content: center;
+}}}
+
+@media screen and (min-width: 1200px) {
+.footer {
+  .container {
+  flex-wrap: nowrap;
+}}}
 
 .footer-adress-container {
+  margin-bottom: 60px;
+  text-align: center;
+ 
+}
+@media screen and (min-width: 768px) {
+  .footer-adress-container {
+  margin-right: 165px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adress-container {
+    margin-bottom: 0;
   margin-right: 70px;
+  text-align: left;
+}
 }
 
 .footer-adress {
@@ -22,8 +47,16 @@
   color: var(--big-header-color);
   font-style: normal;
   text-decoration: none;
+  text-align: center;
   margin-top: 20px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    text-align: left;
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts {
@@ -33,27 +66,71 @@
   color: var(--footer-text-color);
   font-style: normal;
   text-decoration: none;
+  
+}
+
+.footer-list{
+text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    text-align: left;
+    
+  }
 }
 
 .footer-list:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
-.footer-socials:not(:last-child) {
+@media screen and (min-width: 1200px) {
+  .footer-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+}
+
+.footer-socials {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;}
+
+  .footer-socials:not(:last-child) {
+  margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px){
+    .footer-socials {
+  margin-bottom: 0;
+    }
+  }
+
+@media screen and (min-width: 1200px) {
+  .footer-socials{
+
+  &:not(:last-child) {
+    margin-bottom: 0;
   margin-right: 93px;
+}
+}
 }
 
 .footer-call {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--big-header-color);
   margin-bottom: 20px;
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-call {
+    text-align: left;
   padding-top: 12px;
+}
 }
 
 .footer-social-icons-list {
@@ -79,7 +156,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-&:focus {
+&:focus,
+&:active {
   background-color: var(--accent-color);
   outline: none;
 }
@@ -91,12 +169,27 @@
 }
 
 .maling-wrap {
-  display: flex;
+  // display: flex;
   position: relative;
+  height: 120px;
+}
+
+@media screen and (min-width: 768px) {
+.maling-wrap {
+  // display: flex;
+  height: 116px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.maling-wrap {
+  display: flex;
+  height: auto;
+}
 }
 
 .footer-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -108,11 +201,22 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-right: 12px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   padding-left: 16px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-input {
+  width: 358px;
+  margin-right: 12px;
+  margin-bottom: 0;
+  
+}
+}
+
 .footer-btn {
+  align-items: center;
   width: 200px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -126,7 +230,22 @@
   border-style: none;
   text-align: left;
   padding-left: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  right: calc(50%);
+  transform: translateX(50%);
+  bottom: 0px;
 }
+
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+ position: static;
+  transform: none;
+}
+}
+
+
 .mailing-icon {
   position: absolute;
   top: 13px;
