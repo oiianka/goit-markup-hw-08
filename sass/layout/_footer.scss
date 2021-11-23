@@ -207,7 +207,11 @@ text-align: center;
 }
 @media screen and (max-width: 479px){
 .footer-input {
-  width: auto}}
+  width: auto;
+margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;}}
 
 @media screen and (min-width: 1200px) {
   .footer-input {
