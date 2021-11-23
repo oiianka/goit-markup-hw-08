@@ -3,7 +3,7 @@
   display: none;
 }}
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 760px) {
 .navigation {
   display: flex;
   align-items: center;
@@ -43,5 +43,11 @@
   background-color: var(--accent-color);
   border-radius: 2px;
   position: absolute;
-  bottom: -32px;
+  bottom: -35px;
+}}}
+
+@media screen and (min-width: 1200px){
+  .navigation__item_current {
+  &::after {
+    bottom: -32px;
 }}}

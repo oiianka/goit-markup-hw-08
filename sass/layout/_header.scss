@@ -11,12 +11,20 @@
   // padding-bottom: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  .header__container {
+  padding-top: 21px;
+  padding-bottom: 20px;
+}
+}
+
 @media screen and (min-width: 1200px) {
   .header__container {
   padding-top: 24px;
   padding-bottom: 25px;
 }
 }
+
 
 /*burger button for menu*/
 
