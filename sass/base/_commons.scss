@@ -1,7 +1,7 @@
 body {
   background-color: var(
     --big-header-color
-  ); /*Don't forget change it after lesson 7*/
+  ); 
   color: var(--primary-text-color);
   font-family: Roboto, Sans-serif;
   letter-spacing: 0.03em;
@@ -30,8 +30,14 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
 }
 
 .title

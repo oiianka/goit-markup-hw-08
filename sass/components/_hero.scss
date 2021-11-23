@@ -74,6 +74,10 @@
   width: 360px;
     margin-bottom: 30px;
 }
+@media screen and (max-width: 350px){
+  .hero__header {
+  width: calc(90%);
+}}
 
 @media screen and (min-width: 1200px) {
   .hero__header {
